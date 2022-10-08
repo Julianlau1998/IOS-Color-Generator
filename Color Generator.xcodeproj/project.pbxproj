@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2F8B243FF72EFC2A8356B9 /* Pods_Color_Generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF0AB0D8FB8ECCA8CD61C4B /* Pods_Color_Generator.framework */; };
 		B97DBC4B28EEF117003FF35F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97DBC4A28EEF117003FF35F /* AppDelegate.swift */; };
 		B97DBC4D28EEF117003FF35F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97DBC4C28EEF117003FF35F /* SceneDelegate.swift */; };
 		B97DBC4F28EEF117003FF35F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97DBC4E28EEF117003FF35F /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		B97DBC5328EEF11A003FF35F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B97DBC5628EEF11A003FF35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B97DBC5828EEF11A003FF35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF0AB0D8FB8ECCA8CD61C4B /* Pods_Color_Generator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_Generator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C078896318E6673BC5D32673 /* Pods-Color Generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color Generator.release.xcconfig"; path = "Target Support Files/Pods-Color Generator/Pods-Color Generator.release.xcconfig"; sourceTree = "<group>"; };
+		F13F3E6FAFAF6DD7C6734800 /* Pods-Color Generator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color Generator.debug.xcconfig"; path = "Target Support Files/Pods-Color Generator/Pods-Color Generator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2F8B243FF72EFC2A8356B9 /* Pods_Color_Generator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		645A7542ECC988241C12DFF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCF0AB0D8FB8ECCA8CD61C4B /* Pods_Color_Generator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B97DBC3E28EEF117003FF35F = {
 			isa = PBXGroup;
 			children = (
 				B97DBC4928EEF117003FF35F /* Color Generator */,
 				B97DBC4828EEF117003FF35F /* Products */,
+				E04A8D17332DBC65475AC7C4 /* Pods */,
+				645A7542ECC988241C12DFF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "Color Generator";
 			sourceTree = "<group>";
 		};
+		E04A8D17332DBC65475AC7C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F13F3E6FAFAF6DD7C6734800 /* Pods-Color Generator.debug.xcconfig */,
+				C078896318E6673BC5D32673 /* Pods-Color Generator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B97DBC5B28EEF11A003FF35F /* Build configuration list for PBXNativeTarget "Color Generator" */;
 			buildPhases = (
+				A9FA410A9EA098FEF834EBD1 /* [CP] Check Pods Manifest.lock */,
 				B97DBC4328EEF117003FF35F /* Sources */,
 				B97DBC4428EEF117003FF35F /* Frameworks */,
 				B97DBC4528EEF117003FF35F /* Resources */,
+				A30B114353C782DC0C90012A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A30B114353C782DC0C90012A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Color Generator/Pods-Color Generator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Color Generator/Pods-Color Generator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Color Generator/Pods-Color Generator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9FA410A9EA098FEF834EBD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Color Generator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B97DBC4328EEF117003FF35F /* Sources */ = {
@@ -284,14 +352,16 @@
 		};
 		B97DBC5C28EEF11A003FF35F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13F3E6FAFAF6DD7C6734800 /* Pods-Color Generator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HNRK32U6CL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Color Generator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Color Generator (Hex + RGB)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -301,8 +371,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Julian.Color-Generator";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.gen-colors-jl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,14 +382,16 @@
 		};
 		B97DBC5D28EEF11A003FF35F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C078896318E6673BC5D32673 /* Pods-Color Generator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HNRK32U6CL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Color Generator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Color Generator (Hex + RGB)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,8 +401,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Julian.Color-Generator";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.gen-colors-jl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
